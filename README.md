@@ -41,5 +41,13 @@ $HOST_MACHINE_NAME2 ansible_host=$PRIVATE_IP ansible_user=$USER_NAME ansible_ssh
 $DB_MACHINE_NAME ansible_host=$PRIVATE_IP ansible_user=$USER_NAME ansible_ssh_private_key_file=$PEM.KEY
 ````
 6) Ping the server details.
-
+```
+ansible -i inventory -m ping app-machine01
+````
+```
+ansible -i inventory -m ping app-machine02
+````
+```
+ansible -i inventory -m ping db-machine
+````
 
